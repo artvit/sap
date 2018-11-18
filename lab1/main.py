@@ -128,14 +128,14 @@ def test_wordswap():
 
 
 def main():
-    # test_substr()
-    # test_wordcount()
-    # test_wordmatch()
-    # test_wordfind()
-    # test_wordreplace()
-    # test_sentencereverse()
-    # test_sentenceintersect()
-    # test_wordlength()
+    test_substr()
+    test_wordcount()
+    test_wordmatch()
+    test_wordfind()
+    test_wordreplace()
+    test_sentencereverse()
+    test_sentenceintersect()
+    test_wordlength()
     test_wordswap()
 
 
