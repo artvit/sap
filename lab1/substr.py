@@ -1,5 +1,5 @@
 def recursive_substring(string, position, length):
-    if position > len(string) or position < 0:
+    if position >= len(string) or position < 0:
         raise ValueError('Wrong position argument!')
     if position + length > len(string):
         raise ValueError('Wrong length argument')
