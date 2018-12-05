@@ -101,7 +101,7 @@ def test_sentenceintersect():
 
 def test_wordlength():
     import wordlength
-    print('Sentence intersect')
+    print('Word length')
 
     word = '  world!  '
 
