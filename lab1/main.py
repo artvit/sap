@@ -32,7 +32,7 @@ def test_wordmatch():
     print('Word match')
 
     sentence = 'Hello world, world hello, world.'
-    word = 'world'
+    word = 'He'
     print(f'Sentence: "{sentence}"\nWord: "{word}"')
 
     result = wordmatch.recursive_count_matched_words(sentence, word)
@@ -41,15 +41,14 @@ def test_wordmatch():
     print()
 
 
-def test_wordfind():
-    import wordfind
-    print('Word find')
+def test_worddupl():
+    import worddupl
+    print('Word duplicates in sentence')
 
     sentence = 'Hello world, world hello, world.'
-    word = 'world'
-    print(f'Sentence: "{sentence}"\nWord: "{word}"')
+    print(f'Sentence: "{sentence}"')
 
-    result = wordfind.recursive_find_word(sentence, word)
+    result = worddupl.recursive_check_same_words(sentence)
     print(result)
 
     print()
@@ -130,10 +129,10 @@ def test_wordswap():
 def main():
     test_substr()
     test_wordcount()
-    test_wordmatch()
-    test_wordfind()
+    test_worddupl()
     test_wordreplace()
     test_sentencereverse()
+    test_wordmatch()
     test_sentenceintersect()
     test_wordlength()
     test_wordswap()

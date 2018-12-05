@@ -26,9 +26,16 @@ def init():
         FOREIGN KEY(specialty_id) REFERENCES st_specialty(specialty_id)
     )''')
 
-    groups = [('1a',), ('1b',), ('1c',), ('2a',), ('2b',), ('2c',), ('3a',), ('3b',), ('3c',)]
-    specialties = [('Mechanic',), ('Diver',), ('Surveyor',), ('Sound engineer',), ('Mason',), ('Cartographer',)]
-    students_names = ['Petrov', 'Ivanov', 'Sidorov', 'Mihailov', 'Lavochkin']
+    groups = [('11',), ('12',), ('13',), ('21',), ('22',), ('23',), ('31',), ('32',), ('33',)]
+    specialties = [
+        ('Mechanic',),
+        ('Mathematician',),
+        ('Physician',),
+        ('Psychologist',),
+        ('Programmer',),
+        ('Computer scientist',)
+    ]
+    students_names = ['Petrov', 'Ivanov', 'Sidorov', 'Gavrilov', 'Jones']
 
     c.execute('SELECT COUNT(*) FROM st_group')
     if c.fetchone()[0] == 0:

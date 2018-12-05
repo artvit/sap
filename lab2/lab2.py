@@ -116,9 +116,9 @@ class App:
         self.records_text.configure(text=result)
 
 
-# ++++++++++++++++++++++++++++
-root = Tk()
-root.geometry("600x400")
-app = App(root)
+if __name__ == '__main__':
+    root = Tk()
+    root.geometry("600x400")
+    app = App(root)
 
-root.mainloop()
+    root.mainloop()

@@ -8,4 +8,3 @@ def recursive_substring(string, position, length):
         return current_char
     else:
         return current_char + recursive_substring(string, position + 1, length - 1)
-    pass
